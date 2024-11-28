@@ -1,49 +1,34 @@
-
-    
-
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-   
-    <link rel="stylesheet" href="calc.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      
 </head>
 <body>
-  <header>
-    <h1>Śmietankowy </h1>
-    <a href="index.html">
-        <button >back</button>
-      </a>
-      
-     </header>
-    <div class="calculator">
-        <div class="display">
-            <input type="text" id="result" disabled>
-        </div>
-        <div class="buttons">
-            <!-- Первая строка -->
-            <button onclick="clearResult()">C</button>
-            <button onclick="appendValue('(')">(</button>
-            <button onclick="appendValue(')')">)</button>
-            <button onclick="appendValue('/')">/</button>
-            <!-- Вторая строка -->
-            <button onclick="appendValue('7')">7</button>
-            <button onclick="appendValue('8')">8</button>
-            <button onclick="appendValue('9')">9</button>
-            <button onclick="appendValue('*')">*</button>
-            <!-- Третья строка -->
-            <button onclick="appendValue('4')">4</button>
-            <button onclick="appendValue('5')">5</button>
-            <button onclick="appendValue('6')">6</button>
-            <button onclick="appendValue('-')">-</button>
-            <!-- Четвёртая строка -->
-            <button onclick="appendValue('1')">1</button>
-            <button onclick="appendValue('2')">2</button>
-            <button onclick="appendValue('3')">3</button>
-            <button onclick="appendValue('+')">+</button>
-            <!-- Пятая строка -->
-            <button onclick="appendValue('0')">0</button>
-            <button onclick="appendValue('.')">.</button>
-            <button onclick="calculate()">=</button>
-        </div>
-    </div>
-    <script src="calc.js"></script>
-</body>
 
+<div class="form-container">
+    <h2>Wprowadź dane osobowe</h2>
+    <form method="POST" action="zxc.php">
+        <label for="first-name">Imię:</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Nazwisko:</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="street">Ulica:</label>
+        <input type="text" id="street" name="street" required>
+
+        <label for="house-number">Nr domu:</label>
+        <input type="text" id="house-number" name="house-number" required>
+
+        <label for="city">Miasto:</label>
+        <input type="text" id="city" name="city" required>
+
+        <input type="submit" value="Wyślij">
+    </form>
+</div>
+
+</body>
+</html>
