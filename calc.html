@@ -1,0 +1,49 @@
+
+    
+
+<head>
+   
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+  <header>
+    <h1>Śmietankowy </h1>
+    <a href="index.html">
+        <button >back</button>
+      </a>
+      
+     </header>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" disabled>
+        </div>
+        <div class="buttons">
+            <!-- Первая строка -->
+            <button onclick="clearResult()">C</button>
+            <button onclick="appendValue('(')">(</button>
+            <button onclick="appendValue(')')">)</button>
+            <button onclick="appendValue('/')">/</button>
+            <!-- Вторая строка -->
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('*')">*</button>
+            <!-- Третья строка -->
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('-')">-</button>
+            <!-- Четвёртая строка -->
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('+')">+</button>
+            <!-- Пятая строка -->
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+
