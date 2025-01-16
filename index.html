@@ -1,31 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ru">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiryl Paneuski 120445</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
+    <title>Страница входа</title>
+</head>
 <body>
-<header>
-    <h1>Kiryl Paneuski 120445</h1>
-    <div class="buttons">
-      <a href="contact.html">
-          <button>zad 1: Colorful Box Styles</button>
-      </a>
-      <a href="main.html">
-          <button>zad 2: Lorem Ipsum Redefined</button>
-      </a>
-      <a href="text.html">
-          <button>zad 3: Random Thoughts</button>
-      </a>
-      <a href="img.html">
-          <button>zad 4</button>
-      </a>
-      <a href="calc.html">
-          <button>zad 5</button>
-      </a>
-    </div>
-</header>
+    <h1>Авторизация</h1>
+    <form action="check.php" method="POST">
+        <label>Логин:</label><br>
+        <input type="text" name="login" required><br><br>
+
+        <label>Пароль:</label><br>
+        <input type="password" name="password" required><br><br>
+        
+        <input type="submit" value="Войти">
+    </form>
 </body>
 </html>
